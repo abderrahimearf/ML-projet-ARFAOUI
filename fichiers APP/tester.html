@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application de Prédiction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1>The energy performance of residential buildings using statistical learning tools</h1>    
+        <div class="nav-buttons">
+            <button onclick="accueil()">Bienvenue</button>
+            <button onclick="showPrediction()">Prédiction</button>
+            <button onclick="showAbout()">about creator</button>
+            <button onclick="showTest()">Tests</button>
+        </div>
+    </div>
+    
+    <div id="welcome" class="welcome-message">
+        Bienvenue sur votre plateforme de prédiction
+    </div>
+
+    <div id="test" class="content">
+        <button class="status-button" onclick="testerApplication()">Check statut</button>
+        <div id="testResult"></div>
+    </div>
+    <footer class="footer">
+        <p>© 2024 Arfaoui abderrahim. All rights reserved.</p>
+    </footer>
+    
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

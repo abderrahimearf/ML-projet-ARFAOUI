@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application de Prédiction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1> The energy performance of residential buildings using statistical learning tools</h1>    
+
+        <div class="nav-buttons">
+            <button onclick="accueil()">Welcome</button>
+            <button onclick="showPrediction()">prediction</button>
+            <button onclick="showAbout()">about creator</button>
+            <button onclick="showTest() ">testing</button>
+        </div>
+    </div>
+    <div  class="welcome-message">
+        Welcome to your prediction platform
+    </div>
+      
+    
+    <!-- Section de prédiction -->
+    <div  class="content" >
+        <h2> <span style="color: #007BFF;">Prediction</span></h2>
+        <form id="predictForm">
+            <!-- Champs pour les valeurs X1 à X6 -->
+            <div class="input-section">
+                <div class="section-title">Input Variables</div>
+                <label for="X1"> Relative Compactness:</label>
+                <input type="number" id="X1" required>
+
+                <label for="X2">Surface Area:</label>
+                <input type="number" id="X2" required>
+
+                <label for="X3">Wall Area:</label>
+                <input type="number" id="X3" required>
+
+                <label for="X4">Roof Area:</label>
+                <input type="number" id="X4" required>
+
+                <label for="X5">Overall Height:</label>
+                <input type="number" id="X5" required>
+
+                <label for="X6">Orientation:</label>
+                <input type="number" id="X6" required>
+                <label for="X6">Glazing Area:</label>
+                <input type="number" id="X7" required>
+                <label for="X6">Glazing Area Distribution:</label>
+                <input type="number" id="X8" required>
+            </div>
+
+            <!-- Bouton pour prédire Y1 -->
+            <button type="button"  class="predict-button"  onclick="predictModel1()">Predict Heating Load</button>
+            <div id="result1"></div>
+            <div class="input-section">
+                <!-- Champs pour les valeurs Z1 à Z6 -->
+                <div class="section-title">  Input Variables</div>
+                <label for="Z1">Relative Compactness:</label>
+                <input type="number" id="Z1" required>
+
+                <label for="Z2">Surface Area:</label>
+                <input type="number" id="Z2" required>
+
+                <label for="Z3">Wall Area:</label>
+                <input type="number" id="Z3" required>
+
+                <label for="Z4">Roof Area:</label>
+                <input type="number" id="Z4" required>
+
+                <label for="Z5">Overall Height:</label>
+                <input type="number" id="Z5" required>
+
+                <label for="Z6"> Orientation:</label>
+                <input type="number" id="Z6" required>
+                <label for="Z6"> Glazing Area:</label>
+                <input type="number" id="Z7" required>
+                <label for="Z6">Glazing Area Distribution:</label>
+                <input type="number" id="Z8" required>
+            </div>
+
+            <!-- Bouton pour prédire Y2 -->
+            
+            <button type="button"  class="predict-button"  onclick="predictModel2()"> predict Cooling Load</button><br><br><br><br>
+            <div id="result2"></div>
+
+
+        </form>
+
+        
+        
+            
+        
+    </div>
+    <footer class="footer">
+        <p>© 2024 Arfaoui abderrahim. All rights reserved.</p>
+    </footer>
+    
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

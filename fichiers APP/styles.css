@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: right;
+}
+
+
+
+.nav-buttons button {
+    padding: 10px 20px; /* Espace autour du texte */
+    border-radius: 50px; /* Arrondi les coins de chaque bouton */
+    background-color: #007BFF; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Supprime la bordure par défaut */
+    font-size: 16px; /* Taille de la police */
+    cursor: pointer; /* Change le curseur pour indiquer un bouton cliquable */
+    transition: background-color 0.3s ease; /* Ajoute une transition pour un effet visuel */
+    margin: 5px; /* Ajoute de l’espace entre les boutons */
+}
+
+button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.content {
+    padding: 20px;
+    margin: auto;
+    max-width: 500px;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 50px;
+    margin: 5px 0;
+}
+
+input[type="number"] {
+    width: calc(100% - 60px);
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 14px;
+    border: 2px solid #4CAF50;
+    border-radius: 20px; /* Coins arrondis */
+    background-color: #f3f3f3;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombrage léger */
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #45a049;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.predict-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.predict-button:hover {
+    background-color: #45a049;
+}
+.welcome-message {
+    background-color: #007BFF; /* Couleur de fond pour le message de bienvenue */
+    color: white; /* Couleur du texte */
+    padding: 20px; /* Remplissage autour du texte */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre pour donner de la profondeur */
+    font-size: 24px; /* Taille du texte */
+    text-align: center; /* Centre le texte */
+    margin-bottom: 20px; /* Espace en bas */
+}
+.welcome-description {
+    color: #333; /* Couleur du texte */
+    font-size: 18px; /* Taille du texte */
+    text-align: center; /* Centre le texte */
+    margin: 20px auto; /* Espace au-dessus et en bas du paragraphe */
+    max-width: 600px; /* Largeur maximum du texte */
+    line-height: 1.5; /* Hauteur de ligne pour une meilleure lisibilité */
+    font-family: 'Arial', sans-serif; /* Police de caractères */
+    font-style: italic; /* Italique pour le texte */
+    padding: 15px; /* Ajoute du remplissage interne */
+    background-color: #f9f9f9; /* Couleur de fond pour la description */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère pour la profondeur */
+}
+.top-right-image {
+    float: right;
+    margin-top: 10px; /* Ajuster selon la hauteur de .header */
+    margin-right: 10px;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.status-button {
+    background-color: #4CAF50; /* Vert */
+    color: white; /* Texte en blanc */
+    border: none; /* Pas de bordure */
+    padding: 10px 20px; /* Espacement interne */
+    text-align: center; /* Centrer le texte */
+    text-decoration: none; /* Pas de soulignement */
+    display: inline-block; /* Affichage en bloc */
+    font-size: 16px; /* Taille de la police */
+    margin: 4px 2px; /* Marge */
+    cursor: pointer; /* Curseur pointeur */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s; /* Animation de transition */
+}
+.footer {
+    background-color: #45a049; /* Navy Blue */
+    color: white;              /* Text color */
+    text-align: center;        /* Center the text */
+    padding: 20px;            /* Add some padding */
+    position: relative;        /* Position relative for better layout */
+    bottom: 0;                 /* Stick to the bottom */
+    width: 100%;               /* Full width */
+}

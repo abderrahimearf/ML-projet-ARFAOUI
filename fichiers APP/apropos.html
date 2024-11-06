@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application de Prédiction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1> The energy performance of residential buildings using statistical learning tools</h1>    
+        <div class="nav-buttons">
+            <button onclick="accueil()">Welcome</button>
+            <button onclick="showPrediction()">prediction</button>
+            <button onclick="showAbout()">about creator</button>
+            <button onclick="showTest() ">testing</button>
+            
+        </div>
+    </div>
+    <div id="welcome" class="welcome-message">
+        Welcome to your prediction platform
+    </div>
+    <img src="{{ url_for('static', filename='arfab.jpeg') }}" alt="Description de l'image" class="top-right-image">
+
+    
+    
+
+    <div id="about" class="content" >
+        <h2><span style="color: #007BFF;">About the Creator</span></h2>
+        <p> <span style="color: #007BFF;">Name:</span> ARFOUI</p>
+
+        <p><span style="color: #007BFF;">First Name :</span> Abderrahim</p>
+        <p><span style="color: #007BFF;">Additional Information:</span> second-year engineering student in scientific modeling and computer science at the Mohammedia School of Engineering, with a deep passion for data science, artificial intelligence, and machine learning.</p>
+        <p><span style="color: #007BFF;">Linkedin :</span> https://www.linkedin.com/in/abderrahim-arfaoui-25534a2b7
+        <p><span style="color: #007BFF;">Email:</span> arfaouiabderrahim061@gmail.com
+        
+            
+        
+    </div>
+    <footer class="footer">
+        <p>© 2024 Arfaoui abderrahim. All rights reserved.</p>
+    </footer>
+    
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

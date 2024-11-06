@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application de Prédiction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1> The energy performance of residential buildings using statistical learning tools</h1>    
+
+        <div class="nav-buttons">
+            
+            
+            <button onclick="showPrediction()">prediction</button>
+            <button onclick="showAbout()">about creator</button>
+            <button onclick="showTest() ">testing</button>
+
+        </div>
+    </div>
+    <div id="welcome" class="welcome-message">
+        Welcome to your prediction platform
+    </div>
+    <div id="welcome-description" class="welcome-description"><br><br><br>
+        
+        <h2> <span style="color: #007BFF;">variables :</span></h2>
+        <p><span style="color: #007BFF;">Relative Compactness:</span> Indicates the relative compactness of the building, influencing the façade area and heat loss.</p>
+        
+        
+        <p><span style="color: #007BFF;">Wall Area:</span> Indicates the area of the walls, which affects heat loss and heating needs.</p>
+        
+        <p><span style="color: #007BFF;">Roof Area:</span> Represents the area of the roof, which influences solar heat gain.</p>
+        <p><span style="color: #007BFF;">Overall Height:</span> Indicates the total height of the building, an important factor for heat flow and natural lighting.</p>
+        <p><span style="color: #007BFF;">Orientation:</span> Indicates the orientation of the building (e.g., north, south, east, west), which affects sun exposure and energy needs.</p>
+        <p><span style="color: #007BFF;">Glazing Area:</span> Represents the area of windows, influencing heat gain and loss based on sun exposure.</p>
+        <p><span style="color: #007BFF;">Glazing Area Distribution:</span> Indicates the distribution of glazed surfaces on the building, impacting natural light and thermal loads.</p>
+        <span style="color: #007BFF;">We are conducting an energy analysis using different building shapes simulated in Ecotect. The buildings differ in terms of window area, the distribution of that area, and orientation, among other parameters. The dataset consists of 8 features aimed at predicting two real responses: Heating Load  (This is the amount of energy required to heat the building in winter) and Cooling Load (This is the amount of energy required to cool the building in summer).</span>
+    </div>   
+    <footer class="footer">
+        <p>© 2024 Arfaoui abderrahim. All rights reserved.</p>
+    </footer>
+    
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
